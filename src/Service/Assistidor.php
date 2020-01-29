@@ -7,15 +7,9 @@ use Alura\Solid\Model\Curso;
 
 class Assistidor
 {
-    public function assisteCurso(Curso $curso)
+    public function assistir(Curso $conteudo)
     {
-        foreach ($curso->recuperarVideos() as $video) {
-            $video->assistir();
-        }
+        $conteudo->assistir();
     }
 
-    public function assisteAluraMais(AluraMais $aluraMais)
-    {
-        $aluraMais->assistir();
-    }
 }
